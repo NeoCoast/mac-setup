@@ -39,6 +39,7 @@ brews=(
   "curl"
   "git"
   "heroku"
+  "mas"
   "nvm"
   "postgresql"
   "tree"
@@ -66,3 +67,16 @@ casks=(
   "visual-studio-code"
 )
 cask "${casks[@]}"
+
+# Purchase apple store apps
+function masp() {
+  mass=("$@")
+  for mas in "${mass[@]}"; do
+    mas purchase $mas
+  done
+}
+
+mass=(
+  "497799835" # XCode
+)
+masp "${mass[@]}"
