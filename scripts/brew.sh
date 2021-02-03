@@ -53,7 +53,7 @@ brewi "${brews[@]}"
 function cask() {
   casks=("$@")
   for cask in "${casks[@]}"; do
-    brew cask install $cask --appdir="/Applications"
+    brew install $cask --cask --appdir="/Applications"
   done
 }
 
