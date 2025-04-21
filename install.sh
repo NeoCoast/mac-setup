@@ -9,6 +9,6 @@ git clone --recursive https://github.com/NeoCoast/mac-setup.git
 scripts="$dev/mac-setup/scripts"
 source $scripts/mac_config.sh
 source $scripts/brew.sh
-source $scripts/rvm.sh
+source $scripts/rbenv.sh
 
 rm -rf $dev
